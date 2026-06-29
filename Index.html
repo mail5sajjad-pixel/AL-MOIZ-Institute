@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    padding:15px 30px;
+    background-color:#f5f5f5;
+    
+}
+
+.logo img{
+    width:100px;
+}
+
+.top{
+    margin-left:20px;
+    
+}
+
+.top h2{
+    margin:0;
+    color: blue;
+}
+
+.top h3{
+    margin:5px 0 0;
+    color:#555;
+}
+.open{
+    margin-left: 87%; 
+    margin-top: -3100px;
+
+}
+.open img{
+   padding-left: 5px ;
+       
+ }
+ .open .navbar a:hover{
+    transform:scale(1.9);
+ }
+
+
+
+.navbar{
+    text-align:center;
+    padding:15px;
+    background-color:#e0e0e0;
+    
+
+    
+    
+}
+
+.navbar a{
+    display:inline-block;
+    border:2px outset black;
+    background-color:darkgray;
+    color:white;
+    text-decoration:none;
+    padding:8px 20px;
+    margin:5px;
+    border-radius:5px;
+    transition: 0.3s;
+    
+    
+    
+}
+
+.navbar a:hover{
+    background-color:blue;
+     transform:scale(1.05);
+     
+     border-style: dotted;
+    
+}
+
+.navbar a:active{
+    background-color:azure;
+    color:black;
+    
+    
+}
+
+.heading{
+    text-align:center;
+    margin-top:60px;
+    
+}
+
+.heading h1{
+    color: blue;
+    font-size:40px;
+    text-shadow:2px 2px 4px lightgray;
+}
+
+
+.about{
+    width:80%;
+    margin:40px auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.about h2{
+    color: blue;
+}
+.about h4{
+    text-align: center;
+    color: #333;
+}
+
+.about p{
+    font-size:18px;
+    color:#444;
+}
+
+.gallery{
+    
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 20px;
+   
+}
+
+.gallery img{
+    width:850px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+     margin-top: -15px;
+    background-color: lightgray;
+
+     display: inline-block;
+        border-style:solid ;
+        border-style:dotted ;
+        width: 800px;
+        height: 450px;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+
+.gallerya{
+    
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 20px;
+   
+}
+
+.gallerya img{
+    width:850px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+     margin-top: -15px;
+    background-color: lightgray;
+
+     display: inline-block;
+        border-style:solid ;
+        border-style:dotted ;
+        width: 800px;
+        height: 450px;
+}
+
+.gallerya img:hover{
+    transform:scale(1.05);
+}
+
+
+.galleryb{
+    
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 20px;
+   
+}
+
+.galleryb img{
+    width:850px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+     margin-top: -15px;
+    background-color: lightgray;
+
+     display: inline-block;
+        border-style:solid ;
+        border-style:dotted ;
+        width: 800px;
+        height: 450px;
+}
+
+.galleryb img:hover{
+    transform:scale(1.05);
+}
+
+
+
+.galleryc{
+    
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 20px;
+   
+}
+
+.galleryc img{
+    
+    width:850px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+     margin-top: -15px;
+    background-color: lightgray;
+
+     display: inline-block;
+        border-style:solid ;
+        border-style:dotted ;
+        width: 800px;
+        height: 450px;
+}
+
+.galleryc img:hover{
+    transform:scale(1.05);
+}
+
+
+
+
+
+
+.head{
+    font-family:  Verdana, sans-serif;
+    text-align: center;
+}
+.link{
+    text-align: center;
+    color: lightseagreen;
+}
+.since{
+    text-align: center;
+    color: lightskyblue;
+}
+
+
+    
+.apply{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.apply a{
+    display:inline-block;
+    padding:10px 25px;
+    background-color:#007BFF ;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    border:2px solid #0056b3;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.apply a:hover{
+    background-color:black;
+    transform:scale(1.05);
+}
+
+.apply a:active{
+    background-color:#ffffff;
+    color:#000;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="image/A.Moiz.png" alt="Logo">
+    </div>
+
+
+
+
+
+    <div class="top">
+        <h2>AL.MOIZ INSTITUTE</h2>
+        <h3>Computer Learning Center</h3>
+    </div>
+</div>
+
+
+<hr>
+
+
+
+
+<div class="navbar">
+    <a href="masia about.html">About</a>
+    <a href="Courses.html">Courses</a>
+    <a href="image.html">Pictures</a>
+    <a href="media/01.webm">Video</a>
+    <a href="Address.html">Address</a>
+    
+</div>
+
+<div class="heading">
+    <h1><i>Welcome To AL.MOIZ INSTITUTE</i></h1>
+   
+    </div>
+
+    <div class="since">
+
+    <p>
+        ⟪ Since:2009 ⟫
+    </p>
+
+    </div>
+    
+
+</div>
+<div class="head">
+    <h4>Learn Computer Skills & Build Your Future</h4>
+</div>
+
+
+<div class="about">
+    <h2>Status For AL.MOIZ Institute</h2>
+    
+    <div class="con">
+    
+
+    <h4>
+        ⫸⫸ Sir Abdul-Moiz  Ahmad Khan : Contact: 0313-0916446 ⫷⫷
+    </h4>
+
+     <h4>
+        ⫸⫸ 15+ Years of Experienced  : 15,000+ Students Trained ⫷⫷
+     </h4>
+     
+    </div>
+
+
+    <p>
+         AL.Moiz Institute is a well-known educational institute that provides a positive and friendly
+         learning environment for students. The teachers are supportive and help students understand 
+         their subjects in an easy way. Students are encouraged to work hard and improve their knowledge
+         and skills.
+    </p>
+
+    <p>
+         The institute focuses on the overall development of students. Different academic and extracurricular
+         activities help students gain confidence and improve their abilities. Students are motivated to achieve
+         their educational goals and prepare for their future careers.
+    </p>
+
+    <p>
+         AL.Moiz Institute continues to grow and maintain a good standard of education. It aims to provide quality
+         learning opportunities and guidance to all students. Overall, the institute plays an important role in
+         helping students become successful and responsible individuals.
+
+    </p>
+</div>
+
+<div class="gallery">
+    
+    <img src="image/maaza.png" alt="AL.Moiz INSTITUTE Review">
+</div>
+
+</br>
+
+<div class="gallerya">
+     <img src="image/maazb.png" alt="AL.Moiz INSTITUTE Review">
+</div>
+
+</br>
+
+<div class="galleryb">
+     <img src="image/maazc.png" alt="AL.Moiz INSTITUTE Review">
+</div>
+
+</br>
+
+<div class="galleryc">
+     <img src="image/maazd.png" alt="AL.Moiz INSTITUTE Review">
+</div>   
+
+
+
+
+<div class="link">
+    <p>
+        www.ALmoiz.pk : 0313-0916446
+    </p>
+</div>
+<br/>
+
+
+
+
+<div class="open">
+    <img src="image/6.png" width="30" height="30">
+        <img src="image/instagram.png" width="30" height="30">
+    <img src="image/whatsapp.png" width="30" height="30">
+    <img src="image/1 .png" width="30" height="30">
+    
+    </div>
+
+
+<div class="apply">
+
+    <a href="Regesteration.html">Apply</a>
+
+
+
+</div>
+
+</body>
+</html>
