@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Road Map</title>
+    <style>
+        /* Modern Dark Gradient Background */
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1e38);
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Stylish Main Heading */
+        .main-heading {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #3776ab, #ffd343);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 4px 20px rgba(55, 118, 171, 0.3);
+        }
+
+        /* Subheading */
+        .sub-heading {
+            font-size: 1.8rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-weight: 400;
+            border-bottom: 2px solid #ffd343;
+            padding-bottom: 8px;
+        }
+
+        /* Topics Grid Container */
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Stylish Card for each Topic */
+        .topic-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Effects */
+        .topic-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffd343;
+            box-shadow: 0 10px 20px rgba(55, 118, 171, 0.2);
+            color: #ffd343;
+        }
+
+        /* Small Python accent line inside cards */
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #3776ab;
+        }
+
+        .topic-card:hover::before {
+            background: #ffd343;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Stylish Heading -->
+    <h1 class="main-heading">Python Programming</h1>
+    
+    <!-- Sub Heading -->
+    <h2 class="sub-heading">Core & Advanced Topics</h2>
+
+    <!-- Topics Grid -->
+    <div class="topics-container">
+        <div class="topic-card">Introduction to Python</div>
+        <div class="topic-card">Python Installation</div>
+        <div class="topic-card">Variables</div>
+        <div class="topic-card">Data Types</div>
+        <div class="topic-card">Input Output</div>
+        <div class="topic-card">Operators</div>
+        <div class="topic-card">If Else</div>
+        <div class="topic-card">Loops</div>
+        <div class="topic-card">Functions</div>
+        <div class="topic-card">Lists</div>
+        <div class="topic-card">Tuples</div>
+        <div class="topic-card">Dictionaries</div>
+        <div class="topic-card">Strings</div>
+        <div class="topic-card">Modules</div>
+        <div class="topic-card">File Handling</div>
+        <div class="topic-card">OOP (Object Oriented Programming)</div>
+        <div class="topic-card">Error Handling</div>
+        <div class="topic-card">Mini Projects</div>
+        <div class="topic-card">Basic GUI</div>
+        <div class="topic-card">Database Basics</div>
+        <div class="topic-card">Web Scraping Basics</div>
+        <div class="topic-card">Automation Basics</div>
+    </div>
+
+</body>
+</html>

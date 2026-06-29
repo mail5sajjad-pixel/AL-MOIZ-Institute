@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic IT Course Roadmap</title>
+    <style>
+        /* Modern Dark Gradient Background */
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1e38);
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Stylish Main Heading (IT/Tech Theme Gradient) */
+        .main-heading {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00b4db, #00ff87);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 4px 20px rgba(0, 180, 219, 0.3);
+            text-align: center;
+        }
+
+        /* Subheading */
+        .sub-heading {
+            font-size: 1.8rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-weight: 400;
+            border-bottom: 2px solid #00ff87;
+            padding-bottom: 8px;
+        }
+
+        /* Topics Grid Container */
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Stylish Card for each Topic */
+        .topic-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Effects */
+        .topic-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff87;
+            box-shadow: 0 10px 20px rgba(0, 180, 219, 0.2);
+            color: #00ff87;
+        }
+
+        /* IT Accent Line inside Cards */
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #00b4db;
+        }
+
+        .topic-card:hover::before {
+            background: #00ff87;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Stylish Heading -->
+    <h1 class="main-heading">Basic IT Skills</h1>
+    
+    <!-- Sub Heading -->
+    <h2 class="sub-heading">Essential Topics</h2>
+
+    <!-- Topics Grid -->
+    <div class="topics-container">
+        <div class="topic-card">Computer Introduction</div>
+        <div class="topic-card">Hardware Basics</div>
+        <div class="topic-card">Software Basics</div>
+        <div class="topic-card">Windows</div>
+        <div class="topic-card">Typing</div>
+        <div class="topic-card">Internet</div>
+        <div class="topic-card">Email</div>
+        <div class="topic-card">Microsoft Word</div>
+        <div class="topic-card">Microsoft Excel</div>
+        <div class="topic-card">Microsoft PowerPoint</div>
+        <div class="topic-card">File Management</div>
+        <div class="topic-card">Printing</div>
+        <div class="topic-card">Scanning</div>
+        <div class="topic-card">Basic HTML</div>
+        <div class="topic-card">Online Work Basics</div>
+        <div class="topic-card">Computer Shortcuts</div>
+        <div class="topic-card">Basic Troubleshooting</div>
+    </div>
+
+</body>
+</html>

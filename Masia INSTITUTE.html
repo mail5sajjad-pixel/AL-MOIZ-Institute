@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASIA INSTITUTE - Home</title>
+    <style>
+        /* Modern Dark & Gold Gradient Background */
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1e38);
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Header Box */
+        .header-box {
+            width: 100%;
+            max-width: 1100px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffd700;
+            border-radius: 16px;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.1);
+        }
+
+        .main-heading {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            margin: 0;
+            color: #ffd700;
+            text-shadow: 0px 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Container Section */
+        .main-container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Responsive handling for smaller screens */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Card Section Styling */
+        .section-box {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            font-weight: 700;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #800000;
+            display: inline-block;
+            align-self: flex-start;
+        }
+
+        /* Custom Maroon color for Course Heading */
+        .maroon-title {
+            border-bottom-color: #800000;
+        }
+
+        /* Custom Gold color for About Heading */
+        .gold-title {
+            border-bottom-color: #ffd700;
+        }
+
+        /* About Text Styling */
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Instructor Info Badge */
+        .instructor-badge {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #ffd700;
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            margin-top: auto;
+        }
+
+        .instructor-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin: 0 0 5px 0;
+        }
+
+        .instructor-exp {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        /* Modern Course Links / Buttons */
+        .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .course-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 18px 20px;
+            border-radius: 10px;
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        /* Link Hover Animations */
+        .course-link:hover {
+            transform: translateX(10px);
+            background: rgba(128, 0, 0, 0.4); 
+            border-color: #ffd700;
+            color: #ffd700;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
+        }
+
+        /* Contact Footer Info */
+        .footer-info {
+            width: 100%;
+            max-width: 1100px;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(15, 23, 42, 0.8);
+            border-top: 2px solid #ffd700;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            box-sizing: border-box;
+        }
+
+        .info-item {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            line-height: 1.5;
+        }
+
+        .info-item strong {
+            color: #ffd700;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.15rem;
+        }
+
+        .info-item a {
+            color: #00b4db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item a:hover {
+            color: #00ff87;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Institute Header -->
+    <div class="header-box">
+        <h1 class="main-heading">MASIA INSTITUTE</h1>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="main-container">
+        
+        <!-- LEFT SIDE: ABOUT MASIA & INSTRUCTOR -->
+        <div class="section-box">
+            <h2 class="section-title gold-title">About Institute</h2>
+            <p class="about-text">
+                MASIA INSTITUTE is a professional computer and IT training institute in Pakistan. It offers practical courses in Web Development, Graphics Designing, Programming, AutoCAD, and Freelancing. The institute focuses on skill-based learning to help students build successful careers in the IT field. MASIA provides experienced instructors, hands-on projects, and modern learning methods for beginners and advanced students.
+            </p>
+            
+            <!-- Instructor Expert Badge -->
+            <div class="instructor-badge">
+                <p class="instructor-name">Sir Ishtiaq Ahmad Khan</p>
+                <p class="instructor-exp">Lead Instructor — 18 Years of Professional Experience</p>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: COURSES LIST -->
+        <div class="section-box">
+            <h2 class="section-title maroon-title">Available Courses</h2>
+            
+            <div class="course-list">
+                <a href="Basic IT.html" class="course-link">
+                    <span>Basic IT</span>
+                    <small style="color: #94a3b8;">2 Months</small>
+                </a>
+                <a href="C PLUS PLUS.html" class="course-link">
+                    <span>C PLUS PLUS</span>
+                    <small style="color: #94a3b8;">2 Months</small>
+                </a>
+                <a href="Python.html" class="course-link">
+                    <span>Python</span>
+                    <small style="color: #94a3b8;">2 Months</small>
+                </a>
+                <a href="AUTO CAD.html" class="course-link">
+                    <span>AUTO CAD</span>
+                    <small style="color: #94a3b8;">2 Months</small>
+                </a>
+                <a href="Web Development.html" class="course-link">
+                    <span>Web Development</span>
+                    <small style="color: #94a3b8;">3 & 6 Months</small>
+                </a>
+                <a href="Graphics Designing.html" class="course-link">
+                    <span>Graphics Designing</span>
+                    <small style="color: #94a3b8;">3 & 6 Months</small>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACT, WEBSITE & ADDRESS FOOTER -->
+    <div class="footer-info">
+        <div class="info-item">
+            <strong>Contact & Email</strong>
+            Phone: 0314-5110085<br>
+            Email: info@masia.pk
+        </div>
+        <div class="info-item">
+            <strong>Official Website</strong>
+            <a href="https://www.masia.pk" target="_blank">www.masia.pk</a>
+        </div>
+        <div class="info-item">
+            <strong>Institute Address</strong>
+            2nd Floor, Sunny Plaza, near Aladin Shadi Hall, 6th Road Flyover, Murree Road, Satellite Town, Rawalpindi, Pakistan.
+        </div>
+    </div>
+
+</body>
+</html>

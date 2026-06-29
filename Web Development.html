@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course Roadmap</title>
+    <style>
+        /* Modern Dark Gradient Background */
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1e38);
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Stylish Main Heading (Tech Purple to Cyan Gradient) */
+        .main-heading {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 4px 20px rgba(139, 92, 246, 0.3);
+            text-align: center;
+        }
+
+        /* Section Container for each Course */
+        .course-section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 60px;
+            background: rgba(30, 41, 59, 0.4);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Subheading for Courses */
+        .sub-heading {
+            font-size: 2rem;
+            color: #f8fafc;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 700;
+            border-bottom: 3px solid #8b5cf6;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Topics Grid Container */
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Stylish Card for each Topic */
+        .topic-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 22px 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Effects */
+        .topic-card:hover {
+            transform: translateY(-5px);
+            border-color: #06b6d4;
+            box-shadow: 0 10px 20px rgba(6, 182, 212, 0.2);
+            color: #67e8f9;
+        }
+
+        /* Web Dev Accent Line inside Cards */
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #8b5cf6;
+        }
+
+        .topic-card:hover::before {
+            background: #06b6d4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-heading">Web Development Roadmaps</h1>
+    
+    <div class="course-section">
+        <h2 class="sub-heading">3 Months Frontend Mastery</h2>
+        <div class="topics-container">
+            <div class="topic-card">Introduction to Web Development</div>
+            <div class="topic-card">HTML</div>
+            <div class="topic-card">CSS</div>
+            <div class="topic-card">Responsive Design</div>
+            <div class="topic-card">Basic JavaScript</div>
+            <div class="topic-card">Forms</div>
+            <div class="topic-card">Tables</div>
+            <div class="topic-card">Navigation Bars</div>
+            <div class="topic-card">Flexbox</div>
+            <div class="topic-card">CSS Grid</div>
+            <div class="topic-card">Bootstrap</div>
+            <div class="topic-card">Basic Animations</div>
+            <div class="topic-card">DOM Basics</div>
+            <div class="topic-card">Portfolio Website</div>
+            <div class="topic-card">Landing Page Design</div>
+            <div class="topic-card">Mini Projects</div>
+            <div class="topic-card">GitHub Basics</div>
+            <div class="topic-card">Hosting Basics</div>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <h2 class="sub-heading">6 Months Full Stack Professional Diploma</h2>
+        <div class="topics-container">
+            <div class="topic-card">Advanced HTML & CSS</div>
+            <div class="topic-card">Advanced JavaScript</div>
+            <div class="topic-card">Bootstrap</div>
+            <div class="topic-card">Responsive Web Design</div>
+            <div class="topic-card">DOM Manipulation</div>
+            <div class="topic-card">APIs & JSON</div>
+            <div class="topic-card">Git & GitHub</div>
+            <div class="topic-card">React Basics</div>
+            <div class="topic-card">Frontend Frameworks</div>
+            <div class="topic-card">PHP Basics</div>
+            <div class="topic-card">Backend Development</div>
+            <div class="topic-card">MySQL Database</div>
+            <div class="topic-card">Login & Signup System</div>
+            <div class="topic-card">Admin Panel</div>
+            <div class="topic-card">Dynamic Websites</div>
+            <div class="topic-card">Authentication Basics</div>
+            <div class="topic-card">Website Deployment</div>
+            <div class="topic-card">SEO Basics</div>
+            <div class="topic-card">Freelancing</div>
+            <div class="topic-card">Final Professional Projects</div>
+        </div>
+    </div>
+
+</body>
+</html>
